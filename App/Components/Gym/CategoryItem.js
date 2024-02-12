@@ -7,7 +7,7 @@ export default function CategoryItem({ category }) {
 
     return (
         <View style={{
-            padding: 5, alignItems: 'center',
+            padding: 1, alignItems: 'center',
             margin: 5, width: 95, height: 95, justifyContent: 'center',
             borderRadius: 15,
             backgroundColor: Colors.GRAY

@@ -13,9 +13,9 @@ export default function CategoryList({ setSelectedCategory }) {
         },
         {
             id: 2,
-            name: 'Restaurants',
-            value: 'restaurant',
-            icon: require('./../../../assets/food.png')
+            name: 'Parks',
+            value: 'park',
+            icon: require('./../../../assets/park.png')
         },
         {
             id: 3,
