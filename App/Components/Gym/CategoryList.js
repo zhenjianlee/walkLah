@@ -19,9 +19,9 @@ export default function CategoryList({ setSelectedCategory }) {
         },
         {
             id: 3,
-            name: 'Cafe',
-            value: 'cafe',
-            icon: require('./../../../assets/cafe.png')
+            name: 'Stadium',
+            value: 'stadium',
+            icon: require('./../../../assets/stadium.png')
         },
     ]
     return (
