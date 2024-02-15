@@ -38,13 +38,12 @@ export default function CategoryList({ setSelectedCategory }) {
                 showsHorizontalScrollIndicator={false}
                 style={{ marginTop: 5 }}
                 renderItem={({ item }) => (
-                    <TouchableOpacity
+                    <TouchableOpacity style={{ marginHorizontal: 10 }}
                         onPress={() => setSelectedCategory(item.value)} >
                         <CategoryItem category={item} />
                     </TouchableOpacity>
                 )}
             />
-
         </View>
     )
 }

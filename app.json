@@ -7,7 +7,8 @@
           "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
       ],
-      "expo-font"
+      "expo-font",
+      "expo-router"
     ],
     "name": "walkLah",
     "slug": "walkLah",
@@ -31,9 +32,9 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "web": {
+        "favicon": "./assets/favicon.png"
+      }
     }
   }
-}
 }

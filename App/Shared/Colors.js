@@ -1,9 +1,18 @@
 export default {
-    PRIMARY: '#f58653',
-    LIGHT_PRIMARY: '#f4d6ff',
-    BLACK: '#000',
-    GRAY: '#f2f8fc',
-    WHITE: '#fff',
-    YELLOW: '#fabd07',
-    DARK_GRAY: '#3b3b3b'
-}
+  PRIMARY: "#f58653",
+  LIGHT_PRIMARY: "#f4d6ff",
+  MAIN: "#bfdbea",
+  BLACK: "#000",
+  GRAY: "#f2f8fc",
+  WHITE: "#fff",
+  YELLOW: "#fabd07",
+  DARK_GRAY: "#79919d",
+  light: "#eeee",
+  grey: "#D8D8D8",
+  darkGray: "#3F4F57",
+  primary: "#99D5F3",
+  secondary: "#F7BE7D",
+  dark: "#000",
+  white: "#ffff",
+  alt: "rgba(0,0,0,0.5)",
+};
