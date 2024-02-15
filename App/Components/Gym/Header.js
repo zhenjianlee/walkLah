@@ -4,24 +4,30 @@ import Colors from '../../Shared/Colors'
 
 export default function Header() {
     return (
-        <View style={{
-            display: 'flex', flexDirection: 'row',
-            justifyContent: 'space-evenly', gap: 10,
-            alignItems: 'center'
-        }}>
-            <Image source={require('./../../../assets/logo.png')}
-                style={styles.logo} />
+      <View
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          gap: 10,
+          alignItems: "center",
+          marginTop: 10,
+        }}
+      >
+        <Image
+          source={require("./../../../assets/logo.png")}
+          style={styles.logo}
+        />
 
-            <View>
-                <TextInput placeholder='Search'
-                    style={styles.searchBar}
-                />
-            </View>
-            <Image source={require('./../../../assets/user.jpg')}
-                style={styles.userImage}
-            />
+        <View>
+          <TextInput placeholder="Search" style={styles.searchBar} />
         </View>
-    )
+        <Image
+          source={require("./../../../assets/user.jpg")}
+          style={styles.userImage}
+        />
+      </View>
+    );
 }
 
 const styles = StyleSheet.create({

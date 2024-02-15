@@ -24,6 +24,7 @@ function Header() {
         flexDirection: "row",
         justifyContent: "space-evenly",
         alignItems: "center",
+        paddingTop: 5,
       }}
     >
       <Image source={require("../../assets/home.png")} style={styles.home} />
@@ -42,7 +43,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [fontsLoaded] = useFonts({
-    "raleway": require("../../assets/Fonts/Raleway-Regular.ttf"),
+    raleway: require("../../assets/Fonts/Raleway-Regular.ttf"),
     "raleway-bold": require("../../assets/Fonts/Raleway-SemiBold.ttf"),
   });
 
@@ -100,11 +101,19 @@ export default function Home() {
   };
 
   const addWeightWorkout = () => {
-    setValue(parseFloat(getValue) - 200);
+    setValue(parseFloat(getValue) - 100);
   };
 
   const addRunWorkout = () => {
     setValue(parseFloat(getValue) - 250);
+  };
+
+  const addDanceWorkout = () => {
+    setValue(parseFloat(getValue) - 300);
+  };
+
+  const addSkippingWorkout = () => {
+    setValue(parseFloat(getValue) - 400);
   };
 
   const addSpinWorkout = () => {
@@ -185,7 +194,7 @@ export default function Home() {
                   ? [styles.workoutButtons, styles.pressed]
                   : styles.workoutButtons
               }
-              onPress={addWeightWorkout}
+              onPress={addDanceWorkout}
             >
               <View>
                 <Image
@@ -217,7 +226,7 @@ export default function Home() {
                   ? [styles.workoutButtons, styles.pressed]
                   : styles.workoutButtons
               }
-              onPress={addWeightWorkout}
+              onPress={addSkippingWorkout}
             >
               <View>
                 <Image
@@ -327,7 +336,7 @@ const styles = StyleSheet.create({
   },
   submitText: {
     textAlign: "center",
-    fontSize: 25,
+    fontSize: 20,
     color: "white",
     fontFamily: "raleway-bold",
   },

@@ -2,11 +2,10 @@ import React from "react";
 import { View, Text, Image, StyleSheet, ActivityIndicator } from "react-native";
 import Colors from "../Shared/Colors";
 import { useFonts } from "expo-font";
-import { useAuth } from "../Context/AuthContext";
 
 const ProfileScreen = () => {
   const [fontsLoaded] = useFonts({
-    raleway: require("../../assets/Fonts/Raleway-Regular.ttf"),
+    "raleway": require("../../assets/Fonts/Raleway-Regular.ttf"),
     "raleway-bold": require("../../assets/Fonts/Raleway-SemiBold.ttf"),
   });
 
@@ -83,9 +82,11 @@ const styles = StyleSheet.create({
   },
   infoLabel: {
     fontFamily: "raleway-bold",
+    fontSize: 16,
   },
   infoValue: {
     marginTop: 5,
+    fontSize: 16,
   },
 });
 

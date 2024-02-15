@@ -7,7 +7,6 @@ import FitnessTracker from "../Screens/FitnessTracker";
 import Profile from "../Screens/Profile";
 import SleepTracker from "../Screens/SleepTracker";
 import GymNavigation from "./GymNavigation";
-import ProfileScreen from "../Screens/Profile";
 
 const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
@@ -59,7 +58,7 @@ export default function TabNavigation() {
         />
         <Tab.Screen
           name="Profile"
-          component={ProfileScreen}
+          component={Profile}
           options={{ tabBarBadge: 3, headerShown: false }}
         />
       </Tab.Navigator>

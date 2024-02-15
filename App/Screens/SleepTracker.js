@@ -140,7 +140,7 @@ const SleepTracker = () => {
               color: toggleSleepButtonTextColor,
             }}
           >
-            {startTime ? "Click to Stop Tracking" : "Click to Start Tracking"}
+            {startTime ? "Stop Tracking" : "Start Tracking"}
           </Text>
         </TouchableOpacity>
 
@@ -149,6 +149,7 @@ const SleepTracker = () => {
           mode="time"
           onConfirm={handleDatePicked}
           onCancel={hideDateTimePicker}
+          style={Colors.PRIMARY}
         />
       </View>
     </ImageBackground>

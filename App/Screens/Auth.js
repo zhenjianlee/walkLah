@@ -11,11 +11,9 @@ import { useAuth } from "../Context/AuthContext";
 import TabNavigation from "../Navigations/TabNavigation";
 import Colors from "../Shared/Colors";
 import { useFonts } from "expo-font";
-import { useNavigation, CommonActions } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 
 const AuthScreen = ({ route }) => {
-  const navigation = useNavigation();
   const [localUsername, setLocalUsername] = useState("");
   const [localEmail, setLocalEmail] = useState("");
   const { setUsername, setEmail, username } = useAuth();
@@ -101,13 +99,13 @@ const styles = StyleSheet.create({
   subtitle: {
     fontFamily: "raleway-bold",
     fontSize: 16,
-    color: Colors.GRAY,
+    color: Colors.WHITE,
     marginBottom: 20,
   },
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 10,
+    marginBottom: 5,
   },
   input: {
     fontFamily: "raleway",
@@ -116,14 +114,15 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.GRAY,
     padding: 10,
     borderRadius: 5,
-    width: "90%",
+    width: "80%",
+    marginBottom: 10,
   },
   button: {
     backgroundColor: Colors.PRIMARY,
     padding: 12,
     borderRadius: 5,
     alignItems: "center",
-    width: "100%",
+    width: "90%",
   },
   buttonText: {
     color: Colors.WHITE,
